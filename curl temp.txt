@@ -1,0 +1,23 @@
+curl -H "Authorization:Basic c3AudGVzdGluZzIwMTg6c3B0ZXN0aW5nMg==" -H "Content-Type: multipart/form-data" -F "file=@output.xml" -F "info=@testex.json" -F "testInfo=@test.json" "http://localhost:8000/rest/raven/1.0/import/execution/robot/multipart"
+
+{
+    "fields": {
+         "project": {
+             "key": "ISSUE"         
+         },
+         "summary": "Test Execution for robot Execution",
+         "issuetype": {
+            "name": "Test Execution",
+         },
+         "versions": {
+              "name": "v5.1"
+         } 
+            
+    }
+    
+}
+
+
+"versions": {
+             "name": "v5.1"	
+        }
